@@ -1,0 +1,205 @@
+html, body {
+  height: 100%;
+}
+
+
+#page {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+#page  header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin-bottom:20px;
+}
+
+#page  h1 {
+  text-align: center;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  color: grey;
+  line-height: 165px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: grey 1px solid;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+nav .nav-button {
+  display: flex;
+  margin: 5px 5px;
+  width: 165px;
+  height: 40px;
+  font-size: 15px;
+  padding: 4px;
+  align-items: center;
+  border: 1px solid silver;
+  border-radius: 2px;
+}
+
+nav .nav-button:hover {
+  border-color: gray;
+}
+
+nav .pressed {
+  background-color: gainsboro;
+}
+
+nav .logout {
+  display: none;
+}
+
+#page  h2 {
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 0 2px;
+}
+
+
+#content {
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.link {
+  color: blue;
+}
+
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.additional, .more-less .less-text, .less .more-text, .hidden-when-shorter, .display-options .long {
+  display: none;
+}
+
+
+.less .less-text {
+  display: inline;
+}
+
+.book-example .more-less {
+  color: skyblue;
+  font-style: oblique;
+  cursor: pointer;
+}
+
+.book-example .more-less:hover {
+  color: steelblue;
+  cursor: pointer;
+}
+
+
+.recent-post, .user-list-entry, .post {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px gray solid;
+  font-size: 18px;
+}
+
+.post {
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+}
+
+.post .post-content {
+  margin-top: 30px;
+  flex: 0 1 100%;
+}
+
+
+.recent-post img, .user-list-entry img, .post img {
+  height: 40px;
+  width: auto;
+}
+
+.recent-post div, .user-list-entry div, .post div {
+  margin: 0 10px;
+}
+
+
+.post .comments {
+  margin-top: 20px;
+  flex-basis: 100%;
+}
+
+.post span.more-less {
+  display: inline-block;
+  margin: 15px 13px;
+}
+
+.post .comment {
+  font-size: 17px;
+  margin: 15px 0;
+}
+
+.comment .user {
+  margin-left: 15px;
+}
+
+.comment .comment-content {
+  margin-top: 10px;
+}
+
+
+.user-list-entry .user {
+  margin-left: 80px;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+}
+
+footer div {
+  text-align: center;
+  line-height: 100px;
+}
+
+form label {
+  display: inline-block;
+  width: 8em;
+}
+
+form input {
+  margin-bottom: 4px;
+}
+
+form legend {
+  margin-bottom: 8px;
+}
+
+div.post-comment-link {
+  flex-basis: 26%;
+}
+
+.publish-post textarea, .publish-post #title {
+  width: 100%;
+  margin: 1px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+}
+
+.publish-post {
+  margin-bottom: 30px;
+  margin-left: 16px;
+  width: 75%;
+}
+
+
