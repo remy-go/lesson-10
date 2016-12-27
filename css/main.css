@@ -2,7 +2,6 @@ html, body {
   height: 100%;
 }
 
-
 #page {
   display: flex;
   flex-direction: column;
@@ -37,14 +36,8 @@ nav {
 
 nav .nav-button {
   display: flex;
-  margin: 5px 5px;
-  width: 165px;
-  height: 40px;
-  font-size: 15px;
-  padding: 4px;
+  width: 110px;
   align-items: center;
-  border: 1px solid silver;
-  border-radius: 2px;
 }
 
 nav .nav-button:hover {
@@ -55,7 +48,7 @@ nav .pressed {
   background-color: gainsboro;
 }
 
-nav .logout {
+nav .removed {
   display: none;
 }
 
@@ -91,17 +84,6 @@ nav a {
 
 .less .less-text {
   display: inline;
-}
-
-.book-example .more-less {
-  color: skyblue;
-  font-style: oblique;
-  cursor: pointer;
-}
-
-.book-example .more-less:hover {
-  color: steelblue;
-  cursor: pointer;
 }
 
 
@@ -157,7 +139,6 @@ nav a {
   margin-top: 10px;
 }
 
-
 .user-list-entry .user {
   margin-left: 80px;
 }
@@ -201,5 +182,3 @@ div.post-comment-link {
   margin-left: 16px;
   width: 75%;
 }
-
-

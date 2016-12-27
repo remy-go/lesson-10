@@ -1,4 +1,7 @@
-var Users = (function() {
+var InitialDataModule = (function () {
+
+
+var users = function() {
   var users = {
     "vart1": { "name": "vart1", "password": "slaptas1" },
     "vart2": { "name": "vart2", "password": "slaptas2" },
@@ -6,10 +9,10 @@ var Users = (function() {
     "vart4": { "name": "vart4", "password": "slaptas4" }
   };
   return users;
-})();
+};
 
 
-var Posts = (function() {
+var posts = function() {
   var posts = [ {
     "id": "vart1-1476096592532",
     "author": "vart1",
@@ -58,4 +61,8 @@ var Posts = (function() {
     "comments": [] 
   } ];
   return posts;
+};
+
+return { users: users, posts: posts };
+
 })();

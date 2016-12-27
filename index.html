@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Knygos</title>
+    <title>Tinklaraščiai</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 
@@ -13,12 +14,12 @@
       <header>
         <h1></h1>
       </header>
-        <nav>
-          <div class="nav-button recent-posts pressed">Naujausi</div>
-          <div class="nav-button users">Vartotojai</div>
-          <div class="nav-button login">Prisijungti</div>
-          <div class="nav-button logout">Atsijungti</div>
-          <div class="nav-button registration">Registruotis</div>
+        <nav> 
+          <div class="btn btn-default nav-button recent-posts pressed">Naujausi</div>
+          <div class="btn btn-default nav-button users">Vartotojai</div>
+          <div class="btn btn-default nav-button login">Prisijungti</div>
+          <div class="btn btn-default nav-button logout removed">Atsijungti</div>
+          <div class="btn btn-default nav-button registration">Registruotis</div>
         </nav>
 
         <div id="content"></div>
@@ -28,11 +29,14 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="js/data-example.js"></script>
+    <script type="text/javascript" src="js/initial-data.js"></script>
     <script type="text/javascript" src="js/initiate-storage.js"></script>
     <script type="text/javascript" src="js/storage-methods.js"></script>
-    <script type="text/javascript" src="js/blog-functions.js"></script>
-    <script type="text/javascript" src="js/render-views.js"></script>
+    <script type="text/javascript" src="js/blog-data.js"></script>
+    <script type="text/javascript" src="js/user-state.js"></script>
+    <script type="text/javascript" src="js/nav-button-style.js"></script>
+    <script type="text/javascript" src="js/render-content.js"></script>
+    <script type="text/javascript" src="js/render-login-register.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
   </body>

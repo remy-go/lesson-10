@@ -1,4 +1,4 @@
-var Storage = (function() {
+var StorageModule = (function() {
 
   
 function getUsers() { 
