@@ -2,10 +2,6 @@ var BlogDataModule = (function() {
 var Storage = StorageModule;
 
 
-function printDate(date) {
-  return new Date(date).toLocaleDateString([], { hour: '2-digit', minute: '2-digit' }); 
-}
-
 
 function addUser(name, password) {
   var users = Storage.getUsers();
@@ -48,7 +44,6 @@ function addComment(postId, user, content) {
   
 
 return {
-  printDate: printDate,
   addUser: addUser,
   removeUser: removeUser,
   addPost: addPost,

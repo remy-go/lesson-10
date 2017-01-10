@@ -1,5 +1,9 @@
 var StorageModule = (function() {
 
+function thereAreSomeData() {
+  return (!!localStorage.users || !!localStorage.posts);
+}
+
   
 function getUsers() { 
   return JSON.parse(localStorage.users);
@@ -18,6 +22,7 @@ function updatePosts(posts) {
 }
 
 return {
+  thereAreSomeData: thereAreSomeData,
   getUsers: getUsers,
   getPosts: getPosts,
   updateUsers: updateUsers,

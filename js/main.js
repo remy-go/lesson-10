@@ -5,6 +5,7 @@ var recentPostsButton = document.querySelector('.recent-posts'),
     logoutButton = document.querySelector('nav .logout'),
     registrationButton = document.querySelector('.registration'),
     
+    InitialData = InitialDataModule,
     NavButtonStyle = NavButtonStyleModule,
     UserState = UserStateModule,
     RenderLoginRegister = RenderLoginRegisterModule,
@@ -25,6 +26,7 @@ logoutButton.addEventListener('click', listenButton(logoutButton,
         UserState.logout();
       })); 
 
+InitialData.initializeStorage();
 RenderContent.renderRecentPosts();
 
 })();

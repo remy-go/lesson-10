@@ -7,6 +7,10 @@ var navButtons = document.querySelectorAll('.nav-button'),
     BlogData = BlogDataModule,
     Storage = StorageModule;
 
+function printDate(date) {
+  return new Date(date).toLocaleDateString([], { hour: '2-digit', minute: '2-digit' }); 
+}
+
 function createPostFormHTML() {
 var form = document.createElement('form');
 form.classList.add('publish-post');
@@ -24,7 +28,7 @@ function createPostHTML(post) {
   div.id = post.id;
   div.classList.add('post');
   div.innerHTML = '<img src="images/user-icon.png">' +
-                  '<div class="date">' + BlogData.printDate(post.date) + ' </div>' +
+                  '<div class="date">' + printDate(post.date) + ' </div>' +
                   '<div class="user"> ' + post.author + '</div>' +
                   '<div class="title"> ' + post.title + '</div>' +
                   '<div class="post-content">' + post.content + '</div>' +
@@ -63,7 +67,7 @@ function submitComment(post, form) {
 function createCommentHTML(comment) {
   var div = document.createElement('div');
   div.classList.add('comment');
-  div.innerHTML = '<div><span class="date">' + BlogData.printDate(comment.date) + '</span>' +
+  div.innerHTML = '<div><span class="date">' + printDate(comment.date) + '</span>' +
   '<span class="user">' + comment.author + '</span></div>' +
   '<div class="comment-content">' + comment.content + '</div';
   return div;
@@ -109,7 +113,7 @@ function createRecentPostHTML(post) {
   div.classList.add('recent-post');
   div.id = post.id;
   div.innerHTML = '<img src="images/user-icon.png">' +
-                  '<div class="date">' + BlogData.printDate(post.date) + '</div>' +
+                  '<div class="date">' + printDate(post.date) + '</div>' +
                   '<div><span class="author link">' + post.author + '</span></div>' +
                   '<div><span class="title link">' + post.title + '</span></div>';
   div.children[2].addEventListener('click', function() { renderPostsOfUser(post.author); });
